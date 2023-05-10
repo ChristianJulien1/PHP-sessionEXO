@@ -15,7 +15,7 @@
 </html>
     
     <div class = "p-5 mt-5">
-    <button type="button" class="col-1 rounded"><a href="index.php" class=" fw-5 fs-5 text-secondary">Home</a></button><h1 class="text-center mt-5">Ajouter des données</h1>
+    <a href="index.php" class="p-5 bg-dark text-white btn">Accueil</a><h1 class="text-center mt-5">Ajouter des données</h1>
     </div>
 
 <form class="container mt-5 perso" action="traitement.php" method="POST">
@@ -30,11 +30,11 @@
   <input type="number" class="form-control"  placeholder="Renseignez votre age" name="age" required>
 </div>
 <div class="mb-3 input-group">
-        <span class="input-group-text bg-secondary">Taille (1,26m à 3m)</span><input type="number" step= 0.1 class="form-control" name="taille"></input><span class="input-group-text bg-secondary">M</span>
+        <span class="input-group-text bg-secondary">Taille (1,26m à 3m)</span><input type="number" min="1.26" max="3" step="0.01" class="form-control" name="taille"></input><span class="input-group-text bg-secondary">M</span>
 </div>
-	Homme : <INPUT type=radio name="sexe" value="M"> Femme : <INPUT type=radio name="sexe" value="F" required>
+	Homme : <INPUT type=radio name="sexe" value="H"> Femme : <INPUT type=radio name="sexe" value="F" required>
 <div class ="text-end mb-5">
-    <input class="mt-4 btn btn-primary" type="submit" value="Enregistrer les données">
+    <input class="mt-4 btn btn-dark" type="submit" value="Enregistrer les données">
 </div>
 </form>
 
